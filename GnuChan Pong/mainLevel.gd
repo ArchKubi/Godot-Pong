@@ -22,6 +22,9 @@ func _on_rightArea_body_entered(body):
 				wait = true
 
 func _process(delta):
+	if Input.is_action_just_pressed("reset"):
+		get_tree().reload_current_scene()
+
 	var playerScore = ("| " + PlayerN.pNe + ": " + str(LeftGuy) + " | " + "GnuChan: " + str(RightGuy) + " |")
 	$Panel/Score.text = playerScore
 	

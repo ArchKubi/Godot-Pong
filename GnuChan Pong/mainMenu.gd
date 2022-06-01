@@ -21,11 +21,11 @@ func _on_Settings_pressed():
 
 
 func _on_My_Web_pressed():
-	pass # Replace with function body.
+	OS.shell_open("https://archkubi.github.io/")
 
 
 func _on_Itchio_pressed():
-	pass # Replace with function body.
+	OS.shell_open("https://archkubi.itch.io/")
 
 
 func _on_VolumeSlider_value_changed(value):
